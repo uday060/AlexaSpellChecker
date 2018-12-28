@@ -1,0 +1,490 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "spelling checker",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop quiz",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SpellingIntent",
+                    "slots": [
+                        {
+                            "name": "Words",
+                            "type": "WORDS"
+                        }
+                    ],
+                    "samples": [
+                        "start",
+                        "start spell checker"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "LetterOne",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterTwo",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterThree",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterFour",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterFive",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterSix",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterSeven",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterEight",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterNine",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterTen",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterEleven",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterTwelve",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterThirteen",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterFourteen",
+                            "type": "LETTER"
+                        },
+                        {
+                            "name": "LetterFifteen",
+                            "type": "LETTER"
+                        }
+                    ],
+                    "samples": [
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven} {LetterEight} {LetterNine} {LetterTen} {LetterEleven} {LetterTwelve} {LetterThirteen} {LetterFourteen} {LetterFifteen}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven} {LetterEight} {LetterNine} {LetterTen} {LetterEleven} {LetterTwelve} {LetterThirteen} {LetterFourteen}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven} {LetterEight} {LetterNine} {LetterTen} {LetterEleven} {LetterTwelve} {LetterThirteen}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven} {LetterEight} {LetterNine} {LetterTen} {LetterEleven} {LetterTwelve}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven} {LetterEight} {LetterNine} {LetterTen} {LetterEleven}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven} {LetterEight} {LetterNine} {LetterTen}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven} {LetterEight} {LetterNine}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven} {LetterEight}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix} {LetterSeven}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive} {LetterSix}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour} {LetterFive}",
+                        "{LetterOne} {LetterTwo} {LetterThree} {LetterFour}",
+                        "{LetterOne} {LetterTwo} {LetterThree}",
+                        "{LetterOne} {LetterTwo}",
+                        "{LetterOne}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "WORDS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "elephant"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "goat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "frog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dates"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cherry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Banana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "apple"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LETTER",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "z"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "y"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "x"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "w"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "v"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "u"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "t"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "r"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "q"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "p"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "o"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "m"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "l"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "k"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "j"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "i"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "h"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "f"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "e"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "c"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SpellingIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Words",
+                            "type": "WORDS",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.384050453560.59340260774"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "LetterOne",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterTwo",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterThree",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterFour",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterFive",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterSix",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterSeven",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterEight",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterNine",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterTen",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterEleven",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterTwelve",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterThirteen",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterFourteen",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "LetterFifteen",
+                            "type": "LETTER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.384050453560.59340260774",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Can you spell {Words}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Spell {Words}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1235953088217.1491203774141",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "How do you spell {Words}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Can you spell {Words}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.263620419797.1116491597652",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Can you spell {words}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "How do you spell {words}"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.263620419797.1116491597652",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Did you say {Spellings} if yes please confirm"
+                    }
+                ]
+            }
+        ]
+    }
+}
